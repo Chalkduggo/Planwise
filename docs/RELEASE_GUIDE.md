@@ -53,7 +53,7 @@ This guide is for the maintainer. It takes you from the files in this folder to 
 2. Click **Settings**, then **Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**.
 4. Choose branch `main` and folder `/ (root)`. Click **Save**.
-5. After a minute, refresh. Your address appears: `https://YOUR-USERNAME.github.io/planwise/`.
+5. After a minute, refresh. Your address appears: `chalkduggo.github.io/Planwise/`.
 6. Open it. Check that: the logo shows, both email links open your mail app, the calendar download works, a saved plan loads, and a share link opens the plan.
 
 ## Part 6. Polish the repository page
