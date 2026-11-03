@@ -9,7 +9,7 @@ Plan your emergency fund, steady income and big purchases, in your browser.</p>
 
 <p align="center">
   Free &middot; Open source &middot; No sign-up &middot; Private<br>
-  <a href="https://Chalkduggo.github.io/Planwise/"><b>Open Planwise</b></a> &middot;
+  <a href="https://chalkduggo.github.io/Planwise/"><b>Open Planwise</b></a> &middot;
   <a href="docs/Planwise-User-Guide.pdf">User Guide (PDF)</a> &middot;
   <a href="docs/planwise-demo.mp4">Demo video</a> &middot;
   <a href="docs/Planwise-Brochure.pdf">Brochure</a>
