@@ -12,7 +12,7 @@ Thank you for helping. Planwise is an open-source software product developed and
 
 ## How the project is organised
 
-Planwise is one file, `index.html`. It has three parts: styles, the page markup, and several scripts. Each tool has its own script. Tax rules live in one script near the top, and every tool reads them through a small `PW` object. Currency formatting lives in the `PWC` object.
+Planwise is one file, `index.html`. It has three parts: styles, the page markup, and several scripts. Each tool has its own script. Tax rules live in one script near the top, and every tool reads them through a small `PW` object. Currency formatting lives in the `PWC` object. Tools share results through `PWD`, and save their lists through `PWX`. The PDF reader is in `vendor/pdfjs`.
 
 ## Updating the tax defaults
 
@@ -23,7 +23,7 @@ Planwise is one file, `index.html`. It has three parts: styles, the page markup,
 
 ## Before you send a pull request
 
-There is no automatic test suite yet, so please check these by hand:
+Run the automatic checks with `npm install` and then `npm test`. Please also check these by hand:
 
 - [ ] The page opens with no errors in the browser console.
 - [ ] Every tool still calculates. Try **See an example** on the home page.

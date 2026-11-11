@@ -1,6 +1,6 @@
 # Release guide: publish Planwise with GitHub Desktop
 
-This guide is for the maintainer. It takes you from the files in this folder to a public repository, a live website and a version 1.0.0 release. **Nothing here publishes anything by itself. You decide when to click Publish.**
+This guide is for the maintainer. It takes you from the files in this folder to a public repository, a live website and a version 1.2.0 release. **Nothing here publishes anything by itself. You decide when to click Publish.**
 
 ## Before you start
 
@@ -9,7 +9,22 @@ This guide is for the maintainer. It takes you from the files in this folder to 
 - [ ] **Check the tax rules.** The defaults were last checked in November 2026. Open the **Tax rules** tab and compare with official sources.
 - [ ] **Check the contact details.** Both emails appear in `README.md`, `index.html` (footer and About tab) and the guide.
 - [ ] **Keep private things out.** Do not add the private LoopWise repository, the unreleased "mother project", or its screenshots.
-- [ ] **Decide on privacy wording.** The page loads the Inter font from Google Fonts and the pdf.js library from cdnjs. The README says so. If you want zero outside requests, bundle both first.
+- [ ] **Run the tests.** In the repository folder, run `npm install` and then `npm test`. All checks should pass.
+- [ ] **Check the `vendor` folder is copied.** It holds the PDF reader. Without it, the reader falls back to a public library link.
+
+## Already uploaded an earlier version?
+
+If your repository `Planwise` already exists on GitHub with an older `index.html`, update it like this:
+
+1. In GitHub Desktop, choose **File, Clone repository**, pick `Chalkduggo/Planwise` and a folder on your computer. If it is already cloned, open it and click **Fetch origin**, then **Pull origin**.
+2. Open the repository folder (**Repository, Show in Explorer** or **Reveal in Finder**).
+3. Unzip `planwise-github-ready.zip`. Copy everything inside the `planwise-github` folder into the repository folder. When asked, choose **Replace** for `index.html` and `README.md`. Include the hidden `.github` folder, and the `vendor`, `tests` and `docs` folders.
+4. Back in GitHub Desktop, check the **Changes** tab, type `Update Planwise to 1.2.0` as the summary, and click **Commit to main**.
+5. Click **Push origin**.
+6. Wait about a minute. Open `https://chalkduggo.github.io/Planwise/` and press **Ctrl + F5** (Windows) or **Command + Shift + R** (Mac) to skip the old cached copy.
+7. Check that the sidebar shows **Dashboard**, **Goals**, **Debts**, **Check-in** and **Net worth**, and that it says **Version 1.2.0** at the bottom.
+
+If you are starting fresh instead, use Parts 1 to 5 below.
 
 ## Part 1. Install and sign in
 
@@ -20,7 +35,7 @@ This guide is for the maintainer. It takes you from the files in this folder to 
 ## Part 2. Create the repository
 
 1. Click **File, New repository...**
-2. **Name:** `planwise`
+2. **Name:** `Planwise`
 3. **Description:** `Plan your emergency fund, steady income and big purchases, in your browser.`
 4. **Local path:** pick a folder, for example Documents.
 5. **Initialize this repository with a README:** leave it **unticked**. This project already has one.
@@ -31,17 +46,17 @@ This guide is for the maintainer. It takes you from the files in this folder to 
 ## Part 3. Add the project files
 
 1. In GitHub Desktop, click **Repository, Show in Explorer** (Windows) or **Reveal in Finder** (Mac).
-2. Unzip the file you downloaded, `planwise-github-ready.zip`.
+2. Unzip the file you downloaded, `planwise-github-ready.zip`. Copy the hidden `.github` folder and the `vendor`, `tests` and `docs` folders too.
 3. Open the unzipped `planwise-github` folder. Copy **everything inside it** into your repository folder. Include the hidden `.github` folder:
    - Windows: in File Explorer, choose **View, Show, Hidden items**.
    - Mac: in Finder, press **Command + Shift + .**
-4. Open `README.md` in any text editor. Replace every `YOUR-USERNAME` with your GitHub username. Save it.
+4. Open `README.md` and check that the links use your username, `Chalkduggo`. They are already filled in. If you rename the repository, change `Planwise` in those links too.
 5. Open the `LICENSE` file. Check the year and the copyright holder name.
 6. Go back to GitHub Desktop. The **Changes** tab now lists the files.
 
 ## Part 4. Commit and publish
 
-1. In the **Summary** box at the bottom left, type: `Add Planwise 1.0`.
+1. In the **Summary** box at the bottom left, type: `Add Planwise 1.2.0`.
 2. Click **Commit to main**.
 3. Click **Publish repository** at the top.
 4. **Untick "Keep this code private"** if you want it public.
@@ -53,7 +68,7 @@ This guide is for the maintainer. It takes you from the files in this folder to 
 2. Click **Settings**, then **Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**.
 4. Choose branch `main` and folder `/ (root)`. Click **Save**.
-5. After a minute, refresh. Your address appears: `chalkduggo.github.io/Planwise/`.
+5. After a minute, refresh. Your address appears: `https://chalkduggo.github.io/Planwise/`.
 6. Open it. Check that: the logo shows, both email links open your mail app, the calendar download works, a saved plan loads, and a share link opens the plan.
 
 ## Part 6. Polish the repository page
@@ -68,16 +83,16 @@ GitHub Desktop makes tags. The Release page itself is made on github.com.
 
 1. In GitHub Desktop, open the **History** tab.
 2. Right-click your latest commit and choose **Create Tag...**
-3. Type `v1.0.0` and click **Create tag**.
+3. Type `v1.2.0` and click **Create tag**.
 4. Click **Push origin** at the top so the tag reaches GitHub.
 5. On github.com, open **Releases**, then **Draft a new release**.
-6. Click **Choose a tag** and select `v1.0.0`.
-7. **Release title:** `Planwise 1.0.0`
-8. Paste the text from `docs/RELEASE_NOTES_v1.0.0.md` into the description.
+6. Click **Choose a tag** and select `v1.2.0`.
+7. **Release title:** `Planwise 1.2.0`
+8. Paste the text from `docs/RELEASE_NOTES_v1.2.0.md` into the description.
 9. Drag these files into **Attach binaries**: `Planwise-User-Guide.pdf`, `Planwise-Brochure.pdf`, `planwise-demo.mp4`.
 10. Review everything. When you are ready, click **Publish release**.
 
-If **Create Tag...** is missing in your version, skip steps 1 to 4. On the release page choose **Choose a tag**, type `v1.0.0`, and click **Create new tag on publish**.
+If **Create Tag...** is missing in your version, skip steps 1 to 4. On the release page choose **Choose a tag**, type `v1.2.0`, and click **Create new tag on publish**.
 
 ## Part 8. Updating later
 
@@ -85,7 +100,7 @@ If **Create Tag...** is missing in your version, skip steps 1 to 4. On the relea
 2. Add a line to `CHANGELOG.md`.
 3. In GitHub Desktop, write a summary, click **Commit to main**, then **Push origin**.
 4. The website updates in about a minute.
-5. For a new version, repeat Part 7 with a new tag such as `v1.0.1`.
+5. For a new version, repeat Part 7 with a new tag such as `v1.2.1`.
 
 ## Share it
 
@@ -97,8 +112,8 @@ A short LinkedIn post you can adapt. Use the official LoopWise email in public p
 >
 > It is an educational tool, not financial advice.
 >
-> Try it: https://YOUR-USERNAME.github.io/planwise/
-> Code, guide and demo: https://github.com/YOUR-USERNAME/planwise
+> Try it: https://chalkduggo.github.io/Planwise/
+> Code, guide and demo: https://github.com/Chalkduggo/Planwise
 >
 > Built by LoopWise. Feedback welcome: suman.mondal.8@loopwise.pro
 
@@ -108,4 +123,4 @@ A short LinkedIn post you can adapt. Use the official LoopWise email in public p
 - **The website shows a 404:** wait a minute, and check that `index.html` is at the top level of the repository, not inside a folder.
 - **Images missing in the README:** check that the `docs` folder was copied, including `docs/screenshots`.
 - **Hidden `.github` folder missing:** show hidden files (Part 3, step 3) and copy it again.
-- **Large file warning:** none of these files is near GitHub's limits. The largest is the guide PDF at about 1.7 MB.
+- **Large file warning:** none of these files is near GitHub's limits. The largest are the PDF reader worker (about 1 MB) and the guide PDF (about 2 MB).

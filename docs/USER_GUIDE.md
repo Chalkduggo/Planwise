@@ -7,7 +7,7 @@ A PDF version is in [Planwise-User-Guide.pdf](Planwise-User-Guide.pdf).
 
 ## Welcome to Planwise
 
-Planwise helps you answer three questions. **How much should I keep aside for emergencies? How can my savings pay me a steady income? How do I plan for big purchases?** It turns your salary, expenses and goals into a clear, year-by-year plan.
+Planwise helps you answer four questions. **How much should I keep aside for emergencies? How can my savings pay me a steady income? How do I plan for big purchases and goals? Am I on track?** It turns your salary, expenses and goals into a clear, year-by-year plan, and helps you check it every month.
 
 It is free, open source and runs in your web browser. There is no sign-up and no server. What you type stays on your device.
 
@@ -36,14 +36,14 @@ It is free, open source and runs in your web browser. There is no sign-up and no
 Open the page in any modern browser on a computer, tablet or phone. On a phone, tap the menu button at the top left to open the sidebar.
 
 
-### The sidebar
+### The sidebar and top bar
 
-- **Home**: the start page, with a “What to do this month” card once you have a plan.
-- **Plan**: Emergency fund, Bond ladder, 5-year plan, Purchases, Calendar and Scenarios.
-- **Learn**: “Explain it simply”, a plain-words guide to every topic.
-- **Your plan**: save, load, share and print.
-- **Reference**: Tax rules, and About and contact.
-- **Currency**: sits at the top of the sidebar.
+- **Dashboard**: your home page. A live view of your plan once you have one.
+- **Plan**: Emergency fund, Bond ladder, 5-year plan, Purchases, Goals and Debts.
+- **Track**: Check-in and Net worth.
+- **Tools**: Calendar, Scenarios and Tax rules.
+- **Learn and about**: “Explain it simply”, and About and contact.
+- The top bar has the currency box and **Save or share**. On a phone, tap the menu button to open the sidebar.
 
 
 ### Try an example in two minutes
@@ -69,6 +69,23 @@ Planwise follows one simple order, because the order matters.
 4. **Stay ready.** Save for upgrades, and test what happens if your income stops.
 
 > The 5-year plan puts about 90 of every 100 you invest into the emergency fund until it is 90% full. Then the ladder starts and gets the rest. When the emergency fund is full, everything goes to the ladder. You can change both 90s.
+
+
+## The dashboard
+
+Once you have a plan, your home page becomes a dashboard. It shows the numbers that matter and updates whenever you change anything in the tools.
+
+![The dashboard.](screenshots/dashboard.png)
+
+*The dashboard.*
+
+- **Key numbers**: free money each month, how full your emergency fund is, the monthly income your ladder can pay in year 5, how much of your expenses that covers, and your net worth.
+- **Chart**: your emergency fund, its target and your bond ladder over five years.
+- **To do this month**: the bills, transfers and goals due, with dates.
+- **Milestones**: emergency fund 25%, 50%, 75% and 100% full, and the freedom ratio at 10%, 25%, 50% and 100%. Done milestones are ticked. The rest show the month your plan reaches them.
+- **Goals, debts and check-in**: a short summary of each, with links.
+
+> The **freedom ratio** is your ladder’s monthly income divided by your monthly expenses. At 100%, your money pays all your bills.
 
 
 ## Emergency fund
@@ -127,6 +144,10 @@ A ladder splits your money into monthly pieces, called tranches. After a year, o
 
 ### Chance of success
 
+![Chance of success for the small-cap part.](screenshots/chance-of-success.png)
+
+*Chance of success for the small-cap part.*
+
 This card runs thousands of random market paths for the small-cap part. It shows a typical outcome, a bad case (1 in 10 worse) and a good case (1 in 10 better), and the chance of ending with at least what you put in. The yearly swing is a placeholder you can change. It is an illustration, not a prediction.
 
 
@@ -149,6 +170,10 @@ This is the main tool. It reads your pay and costs and builds a plan for the nex
 ### The stress test
 
 At the bottom of the results, the stress test shows how many months you could pay your essential costs if your income stopped. It shows this for today and each year-end, in three ways: the emergency fund alone, the fund plus ladder interest, and the fund plus selling the whole ladder.
+
+![The stress test.](screenshots/stress-test.png)
+
+*The stress test.*
 
 > Your inflation and spending-growth figures sit in the “Your assumptions” box at the top of the tools. If your costs rise faster than official inflation, put your own rate in the spending box.
 
@@ -195,6 +220,87 @@ The calendar shows each month as a grid. Each day shows up to three short lines:
 3. Google Calendar: open Settings, then Import and export, and choose the file. Apple Calendar: double-click the file. Outlook: open the file or use File, Open and Export, Import.
 
 Each reminder alerts you the day before.
+
+
+## Goals
+
+Some things cost more later: a school fee, a wedding, a home. Goals shows what to save each month so the money is ready.
+
+![The Goals page.](screenshots/goals.png)
+
+*The Goals page.*
+
+1. Add a goal, or choose one of the quick buttons such as Education or Wedding.
+2. Enter the cost today, the years until you need it, and how much you have saved.
+3. Enter the yearly price rise. Leave it empty to use your inflation figure.
+4. Enter what your savings earn each year, if anything.
+
+Planwise shows what each goal may cost by then, the monthly saving needed, your progress, and whether your goals fit inside your free money. Goal savings also appear on the calendar and in the calendar file.
+
+
+## Debts
+
+Enter each debt with its balance, interest rate and monthly payment. Planwise shows when you could be debt-free and how much interest you could save.
+
+![The Debts page.](screenshots/debts.png)
+
+*The Debts page.*
+
+1. Add each debt, or use the quick buttons for a home loan, car loan or credit card.
+2. Enter any extra amount you can pay each month, and your monthly income after tax.
+3. Compare **minimum payments only**, **avalanche** (highest rate first) and **snowball** (smallest balance first). Freed-up payments roll into the next debt.
+4. Check the EMI share. Many lenders look at total EMIs of 40% to 50% of income.
+
+
+### Prepay a loan or invest instead?
+
+![Prepay or invest, side by side.](screenshots/prepay-vs-invest.png)
+
+*Prepay or invest, side by side.*
+
+Enter a loan, the extra you can spare each month, and the return you expect from investing after tax. Planwise runs both with the same budget, shows which ends higher, and shows the return investing would need to win. The loan saving is certain. Investment returns are not.
+
+
+## Check-in and bank statement import
+
+A plan is a guess. A check-in is what really happened. Once a month, note your income, spending and savings. Planwise puts them next to the plan.
+
+![The Check-in page.](screenshots/check-in.png)
+
+*The Check-in page.*
+
+1. Choose the month. Planwise shows the plan for that month.
+2. Click **Fill with my plan** and change what was different, or type your real numbers.
+3. Click **Save check-in**.
+
+Your history shows planned saving, actual saving, and a status of on plan, close or behind. You also see months in a row on track, milestones, and an estimate of your emergency fund from what you actually moved into it.
+
+
+### Import a bank statement
+
+![Bank statement import.](screenshots/statement-import.png)
+
+*Bank statement import.*
+
+1. Export a CSV file from your bank. A small example is in the docs folder: sample-bank-statement.csv.
+2. Choose the file. Planwise reads it on your device only.
+3. Check the category averages. Edit the category rules if something is in the wrong group.
+4. Click **Use these as my expenses** to fill your expense list in the 5-year plan.
+
+> Only money going out is counted. Transfers between your own accounts can inflate a category, so please review the numbers. PDF statements are not supported.
+
+
+## Net worth
+
+Net worth is what you own minus what you owe. Enter your assets and debts, then save a snapshot now and then to see the trend.
+
+![The Net worth page.](screenshots/net-worth.png)
+
+*The Net worth page.*
+
+- Enter cash, emergency fund, FDs and bonds, mutual funds, stocks, provident fund, PPF, NPS, gold, property and other assets. Use zero for anything that does not apply.
+- Click **Use my debts from the Debts tool** to fill what you owe.
+- Click **Save a snapshot**. After two or more, a chart shows how your net worth changes.
 
 
 ## Scenarios
@@ -256,8 +362,8 @@ Open **Save, load and share** in the sidebar.
 
 - Everything you type stays in your browser. There are no accounts, no analytics and no server.
 - A salary slip is read on your own device.
-- Two things load from the internet: the Inter font, and the pdf.js reader when you upload a PDF. Neither receives your data.
-- Saved plans live in your browser storage, so use a private device. A share link contains your numbers.
+- The font is built into the page and the PDF salary slip reader is bundled with the project, so using Planwise does not contact other sites.
+- Saved plans live in your browser storage, so use a private device. Turn on autosave if you want Planwise to keep your plan, check-ins and snapshots between visits. A share link contains your numbers.
 
 
 ## Tips for a realistic plan
@@ -293,6 +399,16 @@ Share links work when Planwise is opened from its own web address. Please make s
 ### Why are my results different from another calculator?
 
 Different tools make different assumptions about tax, returns and timing. Check the assumptions in each, and edit the tax rules if yours differ.
+
+
+### My check-ins or snapshots are gone
+
+They are kept in your browser. Clear your browser data and they go. Turn on **Keep my plan saved automatically** in Save or share, and download a file now and then as a backup.
+
+
+### Bank statement categories look wrong
+
+Open **Category rules** and add or change a rule, for example *uber=Transport*. The first rule that matches wins. Then load the file again.
 
 
 ### Can Planwise move my money or connect to my bank?

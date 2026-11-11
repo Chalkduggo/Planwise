@@ -1,0 +1,13 @@
+{
+  "name": "planwise",
+  "version": "1.2.0",
+  "description": "Plan your emergency fund, steady income and big purchases, in your browser.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run-tests.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  }
+}
