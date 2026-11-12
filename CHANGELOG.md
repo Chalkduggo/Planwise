@@ -2,6 +2,20 @@
 
 All notable changes to Planwise are listed here.
 
+## [Unreleased]
+
+### Changed
+- **Home page redesign.** The hero now shows a worked example plan (the same numbers as "See an example") beside the headline. The eight tool cards are replaced by one grouped index of all twelve tools, including Goals, Debts, Check-in and Net worth. "How it works" is now the five-step order from the user guide, with links to each tool.
+- New "Guides and files" section linking the user guide, demo video, brochure and sample bank statement.
+- Three more common questions, taken from the README.
+- The top bar shows the Planwise mark on phones and tablets, and its 5-year plan shortcut is no longer a second filled button.
+
+### Fixed
+- Wide tables no longer push pages sideways on phones (the Emergency fund page scrolled to 610px on a 390px screen).
+- Muted text is darker, so it passes 4.5:1 contrast on the page background. Filled buttons in dark mode now use dark text on the light teal.
+- Form fields are 16px on phones, so iOS no longer zooms the page when you tap one.
+- The dialog close button is a 40px target.
+
 ## [1.2.0] - November 2026
 
 First public release. It includes everything planned for 1.0.1, 1.1 and 1.2.
